@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa's Magical Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Santa's Magical Workshop</h1>
+    </header>
+    <div class="container">
+        <img src="Christmas decoration with Christmas tree and Santa Claus aesthetic.jpeg" class="santa-img" alt="Santa Claus" onclick="triggerSantaAnimation()">
+        <div class="preference-form">
+            <label for="theme">Choose Theme:</label>
+            <select id="theme" onchange="savePreferences()">
+                <option value="snow">Snow</option>
+                <option value="lights">Christmas Lights</option>
+                <option value="candy">Candy Cane</option>
+            </select>
+        </div>
+        <button class="gift-button" onclick="openGift()">Open Your Gift!</button>
+        <div id="giftMessage"></div>
+    </div>
+    <footer>
+        <p>© 2025 Santa's Workshop. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
